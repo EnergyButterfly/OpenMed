@@ -176,6 +176,23 @@ a :focus, a:hover {
 label, input, button, select, textarea {
     font-size: 13px;
 }
+.dropdown-control{
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    text-align: left;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+    width: 100%;
+}
 textarea:focus, input[type="text"]:focus, .form-control:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
         border: 1px solid #f17d2d;
         border-radius: 3px;
@@ -427,15 +444,27 @@ textarea:focus, input[type="text"]:focus, .form-control:focus, input[type="passw
 }
 
 .btn-plus {
-    height: 34px;
+    height: 30px;
     width: 34px;
     padding: 0px;
-    font-size: 22px;
+    font-size: 21px;
 }
 
-    .btn-plus:hover {
-        height: 34px;
+.btn-plus:hover {
+        height: 30px;
         width: 34px;
         padding: 0px;
-        font-size: 22px;
-    }
+        font-size: 21px;
+}
+.dropdown-control .caret{
+    border-color: #999999 rgba(0, 0, 0, 0) -moz-use-text-color;
+    border-style: solid solid dotted;
+    border-width: 8px 6px 0;
+    display: inline-block;
+    float: right;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    width: 0;
+    margin-top: 5px;
+}
