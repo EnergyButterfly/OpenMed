@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Openmed - Registration</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="navbar navbar-fixed-top shadow-box header-background">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header col-md-offset-1">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/Logo.png" alt="logo" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">
+                                <h5>How it Works</h5>
+                            </a></li>
+                            <li><a href="#">
+                                <h5>Get the App</h5>
+                            </a></li>
+                            <li><a href="#">
+                                <h5>Sign In</h5>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-offset">
+            <div class="row col-md-offset-3 col-md-p">
+                <div>
+                    <h2 class="step-registration">Registration</h2>
+                </div>
+                <div>
+                    <h2 class="step-registration step1 step-active">Step 1</h2>
+                </div>
+                <div>
+                    <h2 class="step-registration step2 step-nonactive">Step 2</h2>
+                </div>
+            </div>
+        </div>
+        <div class="alert alert-success">
+            <div class="container">
+                <div class="row">
+                    <h5>There are <b>2 clients</b> waiting for you. Please verify yourself to capture them.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-offset">
+            <div class="row">
+                <form class="form-horizontal" id="frmRegistration" method='post' role="form">
+                    <div class="form-group">
+                        <label for="inputFirstName" class="col-md-3 control-label">First Name:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputFirstName" value="Gordon">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputLastName" class="col-md-3 control-label">Last Name:</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="inputLastName" value="Freeman">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail" class="col-md-3 control-label">Email:</label>
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" id="inputEmail" value="gordon.freeman@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputVerifyPassword" class="col-md-3 control-label">Verify Email:</label>
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" id="inputVerifyPassword" value="gordon.freeman@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-md-3 control-label">Set Password:</label>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="inputPassword" value="gordon.freeman@gmail.com">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="info-label col-md-8 col-md-offset-3">
+                        <p>You can add all your administrators later on your profile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/script.js"></script>
+    <div id="footer">
+        <div class="shadow-box-bottom" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-height">
+                        <div class="col-md-offset-3 btn-operational">
+                            <button id="btnContinue" type="submit" class="btn btn-sample">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
