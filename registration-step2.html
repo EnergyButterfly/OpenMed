@@ -67,16 +67,20 @@
                     </div>
                     <div class="form-group">
                         <label for="btnGroup" class="col-md-3 control-label">Speciality:</label>
-                        <div id="btnGroup" class="btn-group col-md-7">
-                            <select class="form-control">
-                                <option>Dentist</option>
-                                <option>Designer</option>
-                                <option>Carpenter</option>
-                                <option>Lawer</option>
-                            </select>
+                        <div class="btn-group col-md-7">
+                            <button type="button" id="btnGroup" class="btn btn-grey dropdown-toggle" data-toggle="dropdown">
+                                Action <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
                         </div>
                         <div class="col-md-1">
-                            <button class="btn btn-default btn-plus pull-right" type="submit"><span class="glyphicon-plus"></span></button>
+                            <button class="btn btn-grey btn-plus pull-right" type="submit"><span class="glyphicon-plus"></span></button>
                         </div>
                     </div>
                     <div class="form-group">
@@ -92,8 +96,8 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="btn-toolbar col-md-4">
-                                            <button id="btnVerify" type="button" class="btn btn-default btn-xs">Verify</button>
-                                            <button id="btnCancelVerify" type="button" class="btn btn-sample btn-xs">Cancel</button>
+                                            <button id="btnVerify" type="button" class="btn btn-orange-medium btn-xs">Verify</button>
+                                            <button id="btnCancelVerify" type="button" class="btn btn-grey-medium btn-xs">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -105,11 +109,11 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <input type="text" class="form-control" />
+                                            <input type="text" class="form-control"  placeholder="Enter code"/>
                                         </div>
                                         <div class="btn-toolbar col-md-4">
-                                            <button id="btnSubmit" type="button" class="btn btn-default btn-xs">Submit</button>
-                                            <button id="btnCancelSubmit" type="button" class="btn btn-sample btn-xs">Cancel</button>
+                                            <button id="btnSubmit" type="button" class="btn btn-orange-medium">Submit</button>
+                                            <button id="btnCancelSubmit" type="button" class="btn btn-grey-medium">Cancel</button>
                                         </div>
                                     </div>
                                 </div>
@@ -161,8 +165,8 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-height btn-toolbar">
-                        <button id="btnBack" type="submit" class="btn btn-default btn-operational col-md-offset-3 col-md-2">Back</button>
-                        <button id="btnFinish" type="submit" class="btn btn-sample btn-operational col-md-2">Finish</button>
+                        <button id="btnBack" type="submit" class="btn btn-grey btn-operational col-md-offset-3 col-md-2">Back</button>
+                        <button id="btnFinish" type="submit" class="btn btn-orange btn-operational col-md-2">Finish</button>
                     </div>
                 </div>
             </div>
