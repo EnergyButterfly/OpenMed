@@ -72,14 +72,20 @@
                     </div>
                     <div class="form-group">
                         <label for="inputLastName" class="col-md-3 control-label">Last Name:</label>
-                        <div class="col-md-8">
+                        <div class="col-md-8 has-error">
                             <input type="text" class="form-control" id="inputLastName" value="Freeman">
+                        </div>
+                        <div class="control-label col-md-4 has-error">
+                            <p class="help-inline ">Please enter your password</p>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputEmail" class="col-md-3 control-label">Email:</label>
-                        <div class="col-md-8">
+                        <div class="col-md-8 has-success">
                             <input type="email" class="form-control" id="inputEmail" value="gordon.freeman@gmail.com">
+                        </div>
+                        <div class="control-label col-md-1 has-success">
+                            <p class="help-inline ">Apply!</p>
                         </div>
                     </div>
                     <div class="form-group">
@@ -112,7 +118,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/registration.js"></script>
     <script src="js/script.js"></script>
-    <div id="footer">
+    <div class="footer">
         <div class="shadow-box-bottom" role="navigation">
             <div class="container">
                 <div class="row">
@@ -123,6 +129,25 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="footer shadow-box-bottom">
+        <div class="pull-left">
+            <ul class="list-inline col-md-20 col-md-offset-5">
+                <li><a href="#">Terms of Use</a></li>
+                <li>|</li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <ul class="list-inline">
+               <li>© 2013. Open Med. All rights reserved.</li>
+            </ul>
+        </div>
+        <div class="pull-right">
+            <ul class="list-inline">
+               <li>Follow Us</li>
+            </ul>
         </div>
     </div>
 </body>

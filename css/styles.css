@@ -9,18 +9,18 @@ html, body {
     height: auto !important;
     height: 100%;
     /* Negative indent footer by it's height */
-    margin: 0 auto -80px;
+    margin: 0 auto -160px;
 }
 
 /* Set the fixed height of the footer here */
 #push,
-#footer {
+.footer {
     height: 80px;
     background-color: #fdfdfd;
 }
 /* Lastly, apply responsive CSS fixes as necessary */
 @media (max-width: 767px) {
-    #footer {
+    .footer {
         margin-left: -20px;
         margin-right: -20px;
         padding-left: 20px;
@@ -60,7 +60,7 @@ html, body {
 
 .footer-offset {
     padding-top: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 165px;
 }
 
 a {
@@ -488,4 +488,70 @@ textarea:focus, input[type="text"]:focus, .form-control:focus, input[type="passw
     background-color: #f17d2d;
     color: #fff;
     text-shadow: 0 -1px #2e872e
+}
+.footer ul a{
+     font-size: 11px;
+     color: #f17d2d;
+ }
+.footer ul {
+    font-size: 11px;
+    color: #666;
+}
+.footer .list-inline{
+    padding-top: 35px;
+}
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline {
+    color: #b94a48;
+}
+
+.has-error .form-control {
+    border-color: #CB0000;
+}
+
+.has-error .form-control:focus {
+    border-color: #CB0000;
+    outline:none;
+    box-shadow: none;
+}
+
+
+.has-error .input-group-addon {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #b94a48;
+}
+.has-error{
+    color: #CB0000;
+}
+
+/**/
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline {
+    color: #659933;
+}
+.has-success .form-control {
+    border-color: #659933;
+}
+
+.has-success .form-control:focus {
+    border-color: #659933;
+    outline:none;
+    box-shadow: none;
+}
+.has-success .input-group-addon {
+    color: #659933;
+    background-color: #f2dede;
+    border-color: #659933;
+}
+.has-success{
+    color: #659933;
 }
