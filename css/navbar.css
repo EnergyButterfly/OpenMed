@@ -1,0 +1,21 @@
+.navbar .nav {
+    padding-top: 21px;
+    padding-left: 6px;
+}
+
+    .navbar .nav > li > a:focus,
+    .navbar .nav > li > a:hover {
+        color: #f17d2d;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+.navbar-brand {
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.navbar-fixed-top {
+    height: 72px;
+    top: 0;
+}

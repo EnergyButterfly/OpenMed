@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Openmed - Dashboard</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="navbar navbar-fixed-top shadow-box header-background">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/Logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="navbar-header col-md-5 pull-right">
+                        <div class="signed-in-user">
+                            <img class="signed-in-user-photo" src="img/AmandaShark.jpg"></img>
+                            <div class="signed-in-username">Amanda Shark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-offset">
+            <div class="row row-appointment">
+                <div class="dropdown col-md-6">
+                    <h4 id="ddAppointmentsLabel" role="button" data-toggle="dropdown">New Appointments <b class="caret"></b></h4>
+                    <ul id="ddAppointments" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                        <li role="presentation"><a role="menuitem">New Appointments</a></li>
+                        <li role="presentation"><a role="menuitem">Accepted Appointments</a></li>
+                        <li role="presentation"><a role="menuitem">Cancelations</a></li>
+                        <li role="presentation"><a role="menuitem">Declined Appointments</a></li>
+                        <li role="presentation"><a role="menuitem">All Appointments</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-grey-medium btn-refresh disabled"><span class="glyphicon glyphicon-repeat"></span></button>
+                </div>
+            </div>
+            <!-- Appointment alert -->
+            <div class="row">
+                <div id="alertAppointmts" class="col-md-15">
+                    <div  class="alert alert-common">
+                        <a class="close">×</a>
+                        <div class="container">
+                            <div class="row">
+                                <!-- todo use correct column for image -->
+                                <div class="col-md-1 user-photo-container-alert">
+                                    <img class="user-photo" src="img/user1.jpg" />
+                                </div>
+                                <div class="col-md-9">
+                                    <h5>Dr. Gordon Freeman at 11 am on 11/26/13</h5>
+                                    <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
+                                    </h6>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="dropdown dropdown-active">
+                                        <h6 id="H1" class="text-active" role="button" data-toggle="dropdown">Details <b class="caret"></b></h6>
+                                        <ul id="Ul1" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                                            <li role="presentation"><a role="menuitem">Some action</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-14 notificationForm">
+                                    <form class="form-inline " role="form">
+                                        <div class="form-group">
+                                            <button class="btn btn-success">Accept</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-warning">Time</button>
+                                                <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                    <span class="sr-only">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Some action</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control input-small" value="11/26/13">
+                                                <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-small" value="10:30" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control input-small" value="11:30" />
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-grey-medium btn-rect"><span class="glyphicon-minus"></span></button>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-grey-medium btn-rect"><span class="glyphicon-plus"></span></button>
+                                        </div>
+                                    </form>
+                                    <textarea id="notificationTextArea" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-appointment">
+                <div class="user-photo-container col-md-1">
+                    <img class="user-photo" src="img/user1.jpg" />
+                </div>
+                <div class="col-md-9">
+                    <p class="appointment-description">Dr. Lena Rose at 12:00 pm at 12/26/13</p>
+                </div>
+                <div class="col-md-3">
+                    <!-- remove margin and use auto layout -->
+                    <div class="dropdown dropdown-active appointment-details">
+                        <h6 id="H2" class="text-active" role="button" data-toggle="dropdown">Details <b class="caret"></b></h6>
+                        <ul id="Ul2" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                            <li role="presentation"><a role="menuitem">Some action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-appointment">
+                <div class="user-photo-container col-md-1">
+                    <img class="user-photo" src="img/user1.jpg" />
+                </div>
+                <div class="col-md-9">
+                    <p class="appointment-description">Dr. Lena Rose at 12:00 pm at 12/26/13</p>
+                </div>
+                <div class="col-md-3">
+                    <!-- remove margin and use auto layout -->
+                    <div class="dropdown dropdown-active appointment-details">
+                        <h6 id="H3" class="text-active" role="button" data-toggle="dropdown">Details <b class="caret"></b></h6>
+                        <ul id="Ul3" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                            <li role="presentation"><a role="menuitem">Some action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-appointment">
+                <div class="user-photo-container col-md-1">
+                    <img class="user-photo" src="img/user1.jpg" />
+                </div>
+                <div class="col-md-9">
+                    <p class="appointment-description">Dr. Lena Rose at 12:00 pm at 12/26/13</p>
+                </div>
+                <div class="col-md-3">
+                    <!-- remove margin and use auto layout -->
+                    <div class="dropdown dropdown-active appointment-details">
+                        <h6 id="H4" class="text-active" role="button" data-toggle="dropdown">Details <b class="caret"></b></h6>
+                        <ul id="Ul4" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                            <li role="presentation"><a role="menuitem">Some action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-appointment">
+                <div class="user-photo-container col-md-1">
+                    <img class="user-photo" src="img/user1.jpg" />
+                </div>
+                <div class="col-md-9">
+                    <p class="appointment-description">Dr. Lena Rose at 12:00 pm at 12/26/13</p>
+                </div>
+                <div class="col-md-3">
+                    <!-- remove margin and use auto layout -->
+                    <div class="dropdown dropdown-active appointment-details">
+                        <h6 id="H5" class="text-active" role="button" data-toggle="dropdown">Details <b class="caret"></b></h6>
+                        <ul id="Ul5" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                            <li role="presentation"><a role="menuitem">Some action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-appointment">
+                <div class="user-photo-container col-md-1">
+                    <img class="user-photo" src="img/user1.jpg" />
+                </div>
+                <div class="col-md-9">
+                    <p class="appointment-description">Dr. Lena Rose at 12:00 pm at 12/26/13</p>
+                </div>
+                <div class="col-md-3">
+                    <!-- remove margin and use auto layout -->
+                    <div class="dropdown dropdown-active appointment-details">
+                        <h6 id="H6" class="text-active" role="button" data-toggle="dropdown">Details <b class="caret"></b></h6>
+                        <ul id="Ul6" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                            <li role="presentation"><a role="menuitem">Some action</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <script src="js/bootstrap.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/script.js"></script>
+    <div class="footer">
+        <div class="shadow-box-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-height">
+                        <div class="col-md-offset-3 btn-operational">
+                            <button id="btnContinue" type="submit" class="btn btn-orange">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer shadow-box-top">
+        <div class="pull-left">
+            <ul class="list-inline col-md-20 col-md-offset-5">
+                <li><a href="#">Terms of Use</a></li>
+                <li>|</li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="text-center">
+            <ul class="list-inline">
+                <li>© 2013. Open Med. All rights reserved.</li>
+            </ul>
+        </div>
+        <div class="pull-right">
+            <ul class="list-inline">
+                <li>Follow Us</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

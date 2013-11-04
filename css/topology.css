@@ -1,0 +1,27 @@
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text-active {
+    color: #f17d2d;
+}
+
+.text-notactive {
+    color: #CCCCCC;
+}
