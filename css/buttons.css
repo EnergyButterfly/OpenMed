@@ -45,7 +45,7 @@
     text-shadow: 0 -1px #963;
 }
 
-    .btn-orange-medium:hover {
+.btn-orange-medium:hover {
         color: #FFFFFF;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -59,9 +59,9 @@
         background-image: -moz-linear-gradient(bottom, #c25123, #ef823e);
         background-image: -o-linear-gradient(bottom, #c25123, #ef823e);
         background-image: linear-gradient(to top, #c25123, #ef823e);
-    }
+}
 
-    .btn-orange-medium:active {
+.btn-orange-medium:active {
         color: #FFFFFF;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
@@ -75,7 +75,7 @@
         background-image: -moz-linear-gradient(top, #da5c28, #ef823e);
         background-image: -o-linear-gradient(top, #da5c28, #ef823e);
         background-image: linear-gradient(to bottom, #da5c28, #ef823e);
-    }
+}
 
 .btn-grey-medium {
     -webkit-border-radius: 3px;
@@ -96,7 +96,7 @@
     text-shadow: 0 1px rgba(255,255,255,.6);
 }
 
-    .btn-grey-medium:hover {
+.btn-grey-medium:hover {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -112,9 +112,9 @@
         font-weight: bold;
         color: #666;
         text-shadow: 0 1px rgba(255,255,255,.6);
-    }
+}
 
-    .btn-grey-medium:active {
+.btn-grey-medium:active {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -129,7 +129,7 @@
         background-image: linear-gradient(to bottom, #ccc, #eee);
         color: #666;
         text-shadow: 0 1px rgba(255,255,255,.6);
-    }
+}
 
 .btn-grey {
     -webkit-border-radius: 3px;
@@ -150,7 +150,7 @@
     text-shadow: 0 1px rgba(255,255,255,.6);
 }
 
-    .btn-grey:hover {
+.btn-grey:hover {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -167,9 +167,9 @@
         font-weight: bold;
         color: #666;
         text-shadow: 0 1px rgba(255,255,255,.6);
-    }
+}
 
-    .btn-grey:active {
+.btn-grey:active {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -184,7 +184,7 @@
         background-image: linear-gradient(to bottom, #ccc, #eee);
         color: #666;
         text-shadow: 0 1px rgba(255,255,255,.6);
-    }
+}
 
 .btn-orange:hover,
 .btn-orange.disabled,
@@ -221,6 +221,86 @@
     background-image: linear-gradient(to bottom, #da5c28, #ef823e);
 }
 
+.btn-green-medium {
+    font-size: 14px;
+    color: #FFFFFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #dcd8dd;
+    -webkit-box-shadow: inset 0 1px #98f698;
+    -moz-box-shadow: inset 0 1px #98f698;
+    box-shadow: inset 0 1px #98f698;
+    border: solid 1px #2cb048;
+    background-image: -webkit-linear-gradient(bottom, #30ab30, #6dd76d);
+    background-image: -moz-linear-gradient(bottom, #30ab30, #6dd76d);
+    background-image: -o-linear-gradient(bottom, #30ab30, #6dd76d);
+    background-image: linear-gradient(to top, #30ab30, #6dd76d);
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px #2e872e;
+}
+
+.btn-green-medium:hover {
+    font-size: 14px;
+    color: #FFFFFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #dcd8dd;
+    -webkit-box-shadow: inset 0 1px #98f698;
+    -moz-box-shadow: inset 0 1px #98f698;
+    box-shadow: inset 0 1px #98f698;
+    border: solid 1px #2cb048;
+    background-image: -webkit-linear-gradient(bottom, #299729, #6dd76d);
+    background-image: -moz-linear-gradient(bottom, #299729, #6dd76d);
+    background-image: -o-linear-gradient(bottom, #299729, #6dd76d);
+    background-image: linear-gradient(to top, #299729, #6dd76d);
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px #2e872e;
+}
+
+.btn-green-medium:active {
+    font-size: 14px;
+    color: #FFFFFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #dcd8dd;
+    -webkit-box-shadow: inset 0 1px #98f698;
+    -moz-box-shadow: inset 0 1px #98f698;
+    box-shadow: inset 0 1px #98f698;
+    border: solid 1px #2cb048;
+    background-image: -webkit-linear-gradient(top, #30ab30, #6dd76d);
+    background-image: -moz-linear-gradient(top, #30ab30, #6dd76d);
+    background-image: -o-linear-gradient(top, #30ab30, #6dd76d);
+    background-image: linear-gradient(to bottom, #30ab30, #6dd76d);
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 -1px #2e872e;
+    outline: none;
+}
+.btn:focus{
+    outline: 0;
+}
+
+.btn .btn-grey-medium,
+.btn-grey:focus {
+    outline: 0;
+    color: #666;
+}
+
+.btn .btn-orange-medium,
+.btn .btn-orange,
+.btn .btn-green-medium,
+.btn .btn-green:focus {
+    outline: 0;
+    color: #fff;
+}
+
+/******/
+
 .btn-rect {
     height: 30px;
     width: 34px;
@@ -245,3 +325,5 @@
 .btn-toolbar {
     padding-top: -10px;
 }
+
+
