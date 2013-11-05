@@ -192,7 +192,8 @@ label, input, button, select, textarea {
 }
 
 .user-photo-container {
-    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .glyphicon {
@@ -217,9 +218,13 @@ label, input, button, select, textarea {
 }
 
 .appointment-description {
-    margin-top: 33px;
+    margin-top: 14px;
 }
 
 .appointment-details {
-    margin-top: 37px;
+    margin-top: 22px;
+}
+.appointment-border{
+    border: 1px solid #F7F7F9;
+    height: 80px;
 }
