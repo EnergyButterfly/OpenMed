@@ -205,7 +205,7 @@
 }
 
 .btn-orange:active,
-.btn-orange.active {
+{
     color: #FFFFFF;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -281,6 +281,7 @@
     text-shadow: 0 -1px #2e872e;
     outline: none;
 }
+
 .btn:focus{
     outline: 0;
 }
@@ -306,14 +307,68 @@
     width: 34px;
     padding: 0px;
     font-size: 21px;
+    color: #999;
 }
 
-    .btn-rect:hover {
-        height: 30px;
-        width: 34px;
-        padding: 0px;
-        font-size: 21px;
-    }
+.btn-rect:hover {
+    height: 30px;
+    width: 34px;
+    padding: 0px;
+    font-size: 21px;
+    color: #333;
+}
+
+.btn-rect:active {
+    height: 30px;
+    width: 34px;
+    padding: 0px;
+    font-size: 21px;
+    color: #fff;
+    -webkit-box-shadow: 0 -1px #963;
+    -moz-box-shadow: 0 -1px #963;
+    box-shadow: 0 -1px #963;
+}
+
+.btn-plus {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f7f8f9;
+    -webkit-box-shadow: inset 1px 1px #fff;
+    -moz-box-shadow: inset 1px 1px #fff;
+    box-shadow: inset 1px 1px #fff;
+    border: solid 1px #dcd4de;
+    font-weight: bold;
+}
+
+.btn-plus:hover {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f7f8f9;
+    -webkit-box-shadow: inset 1px 1px #fff;
+    -moz-box-shadow: inset 1px 1px #fff;
+    box-shadow: inset 1px 1px #fff;
+    border: solid 1px #dcd4de;
+    font-weight: bold;
+}
+
+.btn-plus:active {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f7f8f9;
+    -webkit-box-shadow: inset 0 1px #f5b086;
+    -moz-box-shadow: inset 0 1px #f5b086;
+    box-shadow: inset 0 1px #f5b086;
+    border: solid 1px #c2471b;
+    background-image: -webkit-linear-gradient(top, #da5c28, #ef823e);
+    background-image: -moz-linear-gradient(top, #da5c28, #ef823e);
+    background-image: -o-linear-gradient(top, #da5c28, #ef823e);
+    background-image: linear-gradient(to bottom, #da5c28, #ef823e);
+    font-weight: bold;
+    outline: none;
+}
 
 .btn-refresh {
     font-size: 18px;
