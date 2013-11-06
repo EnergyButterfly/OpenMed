@@ -423,7 +423,7 @@
              * Defaults to underlying element width.
              */
             width: function() {
-                return $(this).width();
+                return $(this).parent().width();
             }
         };
 
