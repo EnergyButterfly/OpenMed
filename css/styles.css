@@ -25,7 +25,6 @@ html, body {
     margin: 0 auto -80px;
 }
 
-
 /* Set the fixed height of the footer here */
 #push,
 .footer {
@@ -64,14 +63,16 @@ html, body {
 }
 
 .footer-offset {
-     padding-top: 0px;
-     padding-bottom: 165px;
- }
+    padding-top: 0px;
+    padding-bottom: 165px;
+}
+
 .footer-offset-wide {
     padding-top: 0px;
     padding-bottom: 90px;
     padding-top: 72px;
 }
+
 a {
     color: #777777;
 }
