@@ -241,3 +241,11 @@ label, input, button, select, textarea {
     border: 1px solid #F7F7F9;
     height: 80px;
 }
+
+.row-calendar {
+    height: 20px;
+}
+
+.table > tbody > tr > td {
+    padding: 0px;
+}
