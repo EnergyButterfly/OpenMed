@@ -2,8 +2,23 @@
     height: 40px;
 }
 
-.table > tbody > tr > td {
+/*apply style only for td-cal-right*/
+.table > tbody > tr > td[class~=col-subject] {
     padding: 0px;
+}
+
+.table > tbody > tr > td[class~=col-hour] {
+    vertical-align: middle;
+}
+
+.table-hover > tbody > tr:hover > td[class~=col-hour], .table-hover > tbody > tr:hover > th[class~=col-hour] {
+    background-color: #FFFFFF;
+}
+.col-subject {
+    
+}
+.col-hour {
+    
 }
 
 .alert-calendar {
