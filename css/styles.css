@@ -5,6 +5,7 @@
 @import url("validation.css");
 @import url("alert.css");
 @import url("navbar.css");
+@import url("calendar.css");
 
 html, body {
     height: 100%;
@@ -242,10 +243,4 @@ label, input, button, select, textarea {
     height: 80px;
 }
 
-.row-calendar {
-    height: 20px;
-}
 
-.table > tbody > tr > td {
-    padding: 0px;
-}
