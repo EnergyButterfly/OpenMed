@@ -2,7 +2,7 @@
     height: 40px;
 }
 
-.split-calendar{
+.split-calendar {
     height: 20px;
 }
 
@@ -13,6 +13,7 @@
     border-top: 1px solid #E9E9E9;
     border-right: 1px solid #E9E9E9;
     color: #999999;
+    font-size: 13px;
 
 }
 
@@ -21,6 +22,7 @@
     text-align: right;
     border: none;
     color: #999999;
+    font-size: 13px;
 }
 
 .table-hover > tbody > tr:hover > td[class~=col-hour], .table-hover > tbody > tr:hover > th[class~=col-hour] {
@@ -61,6 +63,12 @@
 
 table th, .table td {
     border-top: none;
+}
+
+.icon-calendar {
+    float: right;
+    color: #999;
+    right: 4px;
 }
 
 
