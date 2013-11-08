@@ -2,29 +2,45 @@
     height: 40px;
 }
 
+.split-calendar{
+    height: 20px;
+}
+
 /*apply style only for td-cal-right*/
 .table > tbody > tr > td[class~=col-subject] {
     padding: 0px;
+    border-left: 1px solid #E9E9E9;
+    border-top: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    color: #999999;
+
 }
 
 .table > tbody > tr > td[class~=col-hour] {
     vertical-align: middle;
+    text-align: right;
+    border: none;
+    color: #999999;
 }
 
 .table-hover > tbody > tr:hover > td[class~=col-hour], .table-hover > tbody > tr:hover > th[class~=col-hour] {
     background-color: #FFFFFF;
+    border: 0;
 }
+
 .col-subject {
-    
+
 }
+
 .col-hour {
-    
+
 }
 
 .alert-calendar {
     /* border: 1px solid rgba(0, 0, 0, 0);
      border-radius: 4px 4px 4px 4px;*/
     color: #666;
+    padding: 4px 0 0 4px;
 }
 
 .calendar-accepted {
@@ -38,7 +54,14 @@
 .calendar-proposed {
     background-color: #ebecfe;
 }
-.time-calendar{
+
+.time-calendar {
     vertical-align: middle;
 }
+
+table th, .table td {
+    border-top: none;
+}
+
+
 

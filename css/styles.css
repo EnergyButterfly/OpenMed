@@ -6,6 +6,7 @@
 @import url("alert.css");
 @import url("navbar.css");
 @import url("calendar.css");
+@import url('http://www.urimalo.com/assets/admin/plugins/bootstrap-datepicker/css/datepicker.css');
 
 html, body {
     height: 100%;
@@ -217,6 +218,10 @@ label, input, button, select, textarea {
     max-width: 80px;
 }
 
+.input-medium{
+    max-width: 100px;
+}
+
 .notificationForm {
     margin-left: 70px;
 }
@@ -241,6 +246,7 @@ label, input, button, select, textarea {
 .appointment-border {
     border: 1px solid #F7F7F9;
     height: 80px;
+    margin-top: 6px;
 }
 
 
