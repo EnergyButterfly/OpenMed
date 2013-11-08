@@ -249,4 +249,9 @@ label, input, button, select, textarea {
     margin-top: 6px;
 }
 
+.container-inner {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
