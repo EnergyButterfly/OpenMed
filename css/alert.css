@@ -30,8 +30,9 @@
 .alert-common {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
-    box-shadow: inset 0 0 1px 1px #EDEEEF;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: inset 1px 0 1px 1px #EDEEEF;
     background-color: #f7f8f9;
     border: solid 1px #f7f8f9;
     padding-left: 15px;
