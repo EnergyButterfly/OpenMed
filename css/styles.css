@@ -193,7 +193,7 @@ label, input, button, select, textarea {
 }
 
 .row-appointment {
-    margin-top: 25px;
+    margin-top: 8px;
 }
 
 .user-photo {
@@ -253,5 +253,9 @@ label, input, button, select, textarea {
     padding-left: 0px;
     padding-right: 0px;
 }
-
-
+.image-triangle{
+    background-image: url("../img/triangle.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 161px;
+}

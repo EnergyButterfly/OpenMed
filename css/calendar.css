@@ -10,6 +10,15 @@
     height: 20px;
 }
 
+.calendar-button-margin {
+    margin-top: 15px;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+    background-color: #fcfbfb;
+}
+
 /*apply style only for td-cal-right*/
 .table > tbody > tr > td[class~=col-subject] {
     padding: 0px;
@@ -30,7 +39,7 @@
 }
 
 .table-hover > tbody > tr:hover > td[class~=col-hour], .table-hover > tbody > tr:hover > th[class~=col-hour] {
-    background-color: #FFFFFF;
+    background-color: transparent;
     border: 0;
 }
 
@@ -56,8 +65,7 @@
 .calendar-proposed {
     background-color: #f9f8ac;
 }
-
-.calendar-proposed {
+.calendar-now{
     background-color: #ebecfe;
 }
 
@@ -75,5 +83,6 @@ table th, .table td {
     right: 4px;
 }
 
-
-
+.row-calendar .glyphicon{
+    color: #999999;
+}

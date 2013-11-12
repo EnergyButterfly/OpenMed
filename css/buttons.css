@@ -331,21 +331,21 @@
 
 .btn-rect-small{
     height: 22px;
-    width: 25px;
+    width: 29px;
     padding: 0px;
     font-size: 13px;
     color: #999;
 }
 .btn-rect-small:hover{
     height: 22px;
-    width: 25px;
+    width: 29px;
     padding: 0px;
     font-size: 13px;
     color: #333;;
 }
 .btn-rect-small:active {
     height: 22px;
-    width: 25px;
+    width: 29px;
     padding: 0px;
     font-size: 13px;
     color: #fff;
