@@ -218,7 +218,7 @@ label, input, button, select, textarea {
     max-width: 80px;
 }
 
-.input-medium{
+.input-medium {
     max-width: 100px;
 }
 
@@ -253,9 +253,33 @@ label, input, button, select, textarea {
     padding-left: 0px;
     padding-right: 0px;
 }
-.image-triangle{
+
+.image-triangle {
     background-image: url("../img/triangle.png");
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position:center;
-    height: 161px;
+    height: 64px;
+}
+
+.nav > li > a {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+    color: #df7d3d;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border-color: #dfd8e3 #dfd8e3 rgba(0, 0, 0, 0);
+}
+
+.triangle {
+    clear: both;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 48px;
+    width: 72px;
+    z-index: 1026;
 }
