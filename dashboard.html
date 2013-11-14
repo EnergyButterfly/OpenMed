@@ -44,91 +44,106 @@
 <div class="container header-offset footer-offset-wide">
 <div class="row">
 <div class="col-md-15 col-md-offset-1 row-appointment">
-    <div class="container container-inner">
-        <div class="row">
-            <div class="dropdown col-md-6">
-                <h4 id="ddAppointmentsLabel" role="button" data-toggle="dropdown">New Appointments <b class="caret"></b>
-                </h4>
-                <ul id="ddAppointments" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
-                    <li role="presentation"><a role="menuitem">New Appointments</a></li>
-                    <li role="presentation"><a role="menuitem">Accepted Appointments</a></li>
-                    <li role="presentation"><a role="menuitem">Cancelations</a></li>
-                    <li role="presentation"><a role="menuitem">Declined Appointments</a></li>
-                    <li role="presentation"><a role="menuitem">All Appointments</a></li>
-                </ul>
-            </div>
-            <div class="col-md-1">
-                <button class="btn btn-grey-medium btn-refresh disabled">
-                    <span class="glyphicon glyphicon-repeat"></span>
-                </button>
-            </div>
+<div class="container container-inner">
+    <div class="row">
+        <div class="dropdown col-md-6">
+            <h4 id="ddAppointmentsLabel" role="button" data-toggle="dropdown">New Appointments <b class="caret"></b>
+            </h4>
+            <ul id="ddAppointments" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                <li role="presentation"><a role="menuitem">New Appointments</a></li>
+                <li role="presentation"><a role="menuitem">Accepted Appointments</a></li>
+                <li role="presentation"><a role="menuitem">Cancelations</a></li>
+                <li role="presentation"><a role="menuitem">Declined Appointments</a></li>
+                <li role="presentation"><a role="menuitem">All Appointments</a></li>
+            </ul>
+        </div>
+        <div class="col-md-1">
+            <button class="btn btn-grey-medium btn-refresh disabled">
+                <span class="glyphicon glyphicon-repeat"></span>
+            </button>
         </div>
     </div>
-    <div id="alertAppointmts">
-        <div class="alert alert-common">
-            <a class="close">×</a>
+</div>
+<div id="alertAppointmts">
+    <div class="alert alert-common">
+        <a class="close">×</a>
 
-            <div class="container container-inner">
-                <div class="row">
-                    <!-- todo use correct column for image -->
-                    <div class="col-md-1 user-photo-container-alert">
-                        <img class="user-photo" src="img/user1.jpg"/>
+        <div class="container container-inner">
+            <div class="row">
+                <!-- todo use correct column for image -->
+                <div class="col-md-1 user-photo-container-alert">
+                    <img class="user-photo" src="img/user1.jpg"/>
+                </div>
+                <div class="col-md-9">
+                    <h5>Dr. Gordon Freeman at 11 am on 11/26/13</h5>
+                </div>
+                <div class="col-md-3">
+                    <div class="dropdown dropdown-active">
+                        <h6 id="H1" class="text-active" role="button" data-toggle="dropdown">Details <b
+                                class="caret"></b></h6>
+                        <ul id="Ul1" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
+                            <li role="presentation"><a role="menuitem">Some action</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-9">
-                        <h5>Dr. Gordon Freeman at 11 am on 11/26/13</h5>
-                        <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
-                        </h6>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="dropdown dropdown-active">
-                            <h6 id="H1" class="text-active" role="button" data-toggle="dropdown">Details <b
-                                    class="caret"></b></h6>
-                            <ul id="Ul1" class="dropdown-menu" role="menu" aria-labelledby="ddAppointmentsLabel">
-                                <li role="presentation"><a role="menuitem">Some action</a></li>
-                            </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 notificationForm">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
+                            </h6>
+                        </div>
+                        <div class="col-md-10">
+                            <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
+                            </h6>
+                        </div>
+
+                        <div class="col-md-5">
+                            <h6><span class="text-muted">Received: </span><span>12/12/12</span>
+                            </h6>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 notificationForm">
-                        <form class="form-inline " role="form">
-                            <div class="form-group">
-                                <button class="btn btn-green-medium">Accept</button>
+                </div>
+                <div class="col-md-12 notificationForm">
+                    <form class="form-inline " role="form">
+                        <div class="form-group">
+                            <button class="btn btn-green-medium">Accept</button>
+                        </div>
+                        <div class="form-group">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-orange-medium">Time</button>
+                                <button type="button" class="btn btn-orange-medium dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Some action</a></li>
+                                </ul>
                             </div>
-                            <div class="form-group">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-orange-medium">Time</button>
-                                    <button type="button" class="btn btn-orange-medium dropdown-toggle"
-                                            data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Some action</a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group bfh-datepicker">
+                                <input type="text" class="form-control input-medium from_date" value="11/26/13">
+                                <span class="input-group-addon glyphicon glyphicon-calendar"></span>
                             </div>
-                            <div class="form-group">
-                                <div class="input-group bfh-datepicker">
-                                    <input type="text" class="form-control input-medium from_date" value="11/26/13">
-                                    <span class="input-group-addon glyphicon glyphicon-calendar"></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control input-small" value="10:30"/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control input-small" value="11:30"/>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-plus btn-rect"><span class="glyphicon-minus"></span></button>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-plus btn-rect"><span class="glyphicon-plus"></span></button>
-                            </div>
-                        </form>
-                        <textarea id="notificationTextArea" class="form-control"></textarea>
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-small" value="10:30"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-small" value="11:30"/>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-plus btn-rect"><span class="glyphicon-minus"></span></button>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-plus btn-rect"><span class="glyphicon-plus"></span></button>
+                        </div>
+                    </form>
+                    <textarea id="notificationTextArea" class="form-control"></textarea>
                 </div>
             </div>
         </div>
@@ -151,7 +166,43 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
+                                </h6>
+                            </div>
+                            <div class="col-md-10">
+                                <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
+                                </h6>
+                            </div>
+
+                            <div class="col-md-5">
+                                <h6><span class="text-muted">Received: </span><span>12/12/12</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            <!--<div class="row">
+                    <div class="col-md-12 notificationForm">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
+                                </h6>
+                            </div>
+                            <div class="col-md-10">
+                                <h6><span class="text-muted">Patient: </span><span>Dani Mcgahey</span>
+                                </h6>
+                            </div>
+
+                            <div class="col-md-5">
+                                <h6><span class="text-muted">Received: </span><span>12/12/12</span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
             </div>
         </div>
         <div class="appointment-border">
@@ -348,6 +399,7 @@
             </tr>
         </table>
     </div>
+</div>
 </div>
 </div>
 </div>
