@@ -234,14 +234,8 @@ label, input, button, select, textarea {
 .appointment-content {
     border: 1px solid #F7F7F9;
     /*height: 80px;*/
-    padding-left: 15px;
-    padding-top: 15px;
+    padding: 15px;
     margin-top: 6px;
-}
-
-.container-inner {
-    padding-left: 0px;
-    padding-right: 0px;
 }
 
 .image-triangle {
