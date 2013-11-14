@@ -192,18 +192,14 @@ label, input, button, select, textarea {
     font-size: 14px;
 }
 
-.row-appointment {
-    margin-top: 8px;
-}
-
 .user-photo {
     width: 50px;
     height: 50px;
 }
 
-.user-photo-container-alert {
+/*.user-photo-container-alert {
     margin-right: 15px;
-}
+}*/
 
 .user-photo-container {
     margin-right: 15px;
@@ -222,17 +218,9 @@ label, input, button, select, textarea {
     max-width: 100px;
 }
 
-.notificationForm {
-    margin-left: 70px;
-}
-
 #notificationTextArea {
     height: 50px;
     margin-top: 10px;
-}
-
-.row-appointment {
-    /*height: 80px;*/
 }
 
 .appointment-description {
@@ -243,9 +231,11 @@ label, input, button, select, textarea {
     margin-top: 22px;
 }
 
-.appointment-border {
+.appointment-content {
     border: 1px solid #F7F7F9;
-    height: 80px;
+    /*height: 80px;*/
+    padding-left: 15px;
+    padding-top: 15px;
     margin-top: 6px;
 }
 
