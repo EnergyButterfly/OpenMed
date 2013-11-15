@@ -211,11 +211,11 @@ label, input, button, select, textarea {
 }
 
 .input-small {
-    max-width: 80px;
+    max-width: 60px;
 }
 
 .input-medium {
-    max-width: 100px;
+    max-width: 90px;
 }
 
 #notificationTextArea {
