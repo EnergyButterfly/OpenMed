@@ -42,13 +42,35 @@
     background-color: transparent;
     border: 0;
 }
+.calendar-row:hover {
+    background-color: #fcfbfb;
+}
+
+.calendar-row, .calendar-row-bottom{
+    height: 40px;
+    border-style: solid;
+    border-color: #E9E9E9;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+}
+
+.calendar-row-bottom {
+    border-bottom-width: 1px;
+}
 
 .col-subject {
 
 }
 
 .col-hour {
-
+    vertical-align: middle;
+    text-align: right;
+    border: none;
+    color: #999999;
+    height: 40px;
+    font-size: 13px;
 }
 
 .alert-calendar {
