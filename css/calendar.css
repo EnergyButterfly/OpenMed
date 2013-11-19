@@ -42,11 +42,12 @@
     background-color: transparent;
     border: 0;
 }
+
 .calendar-row:hover {
     background-color: #fcfbfb;
 }
 
-.calendar-row, .calendar-row-bottom{
+.calendar-row, .calendar-row-bottom {
     height: 40px;
     border-style: solid;
     border-color: #E9E9E9;
@@ -87,7 +88,8 @@
 .calendar-proposed {
     background-color: #f9f8ac;
 }
-.calendar-now{
+
+.calendar-now {
     background-color: #ebecfe;
 }
 
@@ -105,6 +107,15 @@ table th, .table td {
     right: 4px;
 }
 
-.row-calendar .glyphicon{
+.row-calendar .glyphicon {
     color: #999999;
+}
+
+.border-dotted {
+    border-bottom: 1px dotted #E9E9E9;
+    height: 20px;
+}
+.padding-time{
+    padding-top: 10px;
+    padding-right: 12px;
 }
