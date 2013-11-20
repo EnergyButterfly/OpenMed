@@ -197,6 +197,11 @@ label, input, button, select, textarea {
     height: 50px;
 }
 
+.user-photo-big {
+    width: 100px;
+    height: 100px;
+}
+
 /*.user-photo-container-alert {
     margin-right: 15px;
 }*/
@@ -292,6 +297,15 @@ input[type=radio] + label {
     margin-top: 5px;
 }
 
-.main-logo{
+.main-logo {
     height: 110px;
+}
+.profileTabs{
+    padding-top: 20px;
+}
+.profileName{
+    padding-top: 33px;
+}
+.profileInputs{
+    padding-top: 12px;
 }
