@@ -300,12 +300,26 @@ input[type=radio] + label {
 .main-logo {
     height: 110px;
 }
-.profileTabs{
+
+.profile-tabs {
     padding-top: 20px;
 }
-.profileName{
+
+.profile-name {
     padding-top: 33px;
 }
-.profileInputs{
+
+.profile-inputs {
     padding-top: 12px;
+}
+
+.profile-slide {
+    background-color: #F7F7F9;
+    padding-top: 20px;
+}
+
+#profilePanel {
+    -webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
+    -moz-box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
 }
