@@ -54,7 +54,7 @@
     <div class="col-md-24">
         <ul class="nav nav-tabs">
             <li class="active"><a href="#">My Profile</a></li>
-            <li><a href="#">My Settings</a></li>
+            <li><a href="profile-settings.html">My Settings</a></li>
             <li><a href="#">Manage Administrators</a></li>
             <li><a href="#">Manage Providers</a></li>
         </ul>
@@ -63,198 +63,200 @@
 
 
 <div class="profile-slide">
-<div class="row profileTabs">
-    <!-- todo use correct column for image -->
-    <div class="col-md-3 col-md-offset-1">
-        <img class="user-photo-big" src="img/user1.jpg"/>
-    </div>
-    <!-- must be 22 here 1 is for close icon-->
-    <div class="col-md-10">
-        <div class="row">
-            <div class="col-md-19">
-                <h5><b>Amanda Shark</b></h5>
+<div class="profile-body">
+    <div class="row profileTabs">
+        <!-- todo use correct column for image -->
+        <div class="col-md-3 col-md-offset-2">
+            <img class="user-photo-big" src="img/user1.jpg"/>
+        </div>
+        <!-- must be 22 here 1 is for close icon-->
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-19">
+                    <h5><b>Amanda Shark</b></h5>
+                </div>
+                <div class="col-md-2 pull-right">
+                    <button class="btn btn-plus btn-rect pull-right">
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </button>
+                </div>
             </div>
-            <div class="col-md-2 pull-right">
-                <button class="btn btn-plus btn-rect pull-right">
-                    <span class="glyphicon glyphicon-edit"></span>
-                </button>
+            <div class="row profile-name">
+                <div class="">
+                    <button type="button" id="profileType" class="dropdown-control dropdown-toggle"
+                            data-toggle="dropdown">
+                        Super Administrator <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">AL</a></li>
+                        <li><a href="#">CA</a></li>
+                        <li><a href="#">MO</a></li>
+                        <li><a href="#">NH</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row profileName">
-            <div class="">
-                <button type="button" id="profileType" class="dropdown-control dropdown-toggle"
-                        data-toggle="dropdown">
-                    Super Administrator <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">AL</a></li>
-                    <li><a href="#">CA</a></li>
-                    <li><a href="#">MO</a></li>
-                    <li><a href="#">NH</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
-</div>
-<div class="row profileInputs">
-    <div class="notificationForm col-md-24 col-md-offset-1">
-        <div class="row">
-            <form class="form-horizontal" id="Name" method='post' role="form">
-                <div class="form-group">
-                    <label class="col-md-3 control-label">Email:</label>
+    <div class="row profile-inputs">
+        <div class="notificationForm col-md-24 col-md-offset-2">
+            <div class="row">
+                <form class="form-horizontal" id="Name" method='post' role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label label-grey">Email:</label>
 
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="inputLastPhone"
-                               value="amanda@gmail.com">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="inputLastPhone"
+                                   value="amanda@gmail.com">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label">New Password:</label>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label label-grey">New Password:</label>
 
-                    <div class="col-md-10">
-                        <input type="password" class="form-control" id="password"
-                               value="trololo">
+                        <div class="col-md-10">
+                            <input type="password" class="form-control" id="password"
+                                   value="trololo">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputLastPhone" class="col-md-3 control-label">Practice
-                        Name:</label>
+                    <div class="form-group">
+                        <label for="inputLastPhone" class="col-md-3 control-label label-grey ">Practice
+                            Name:</label>
 
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="inputPracticeName"
-                               value="">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="inputPracticeName"
+                                   value="">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputLastPhone" class="col-md-3 control-label">Phone
-                        Number:</label>
+                    <div class="form-group">
+                        <label for="inputLastPhone" class="col-md-3 control-label label-grey">Phone
+                            Number:</label>
 
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="inputPhoneNumber"
-                               value="">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="inputPhoneNumber"
+                                   value="">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputFax" class="col-md-3 control-label">Fax Number:</label>
+                    <div class="form-group">
+                        <label for="inputFax" class="col-md-3 control-label label-grey">Fax Number:</label>
 
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="inputFax" value="">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="inputFax" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress" class="col-md-3 control-label">Address:</label>
+                    <div class="form-group">
+                        <label for="inputAddress" class="col-md-3 control-label label-grey">Address:</label>
 
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="inputAddress" value="">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="inputAddress" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputCity" class="col-md-3 control-label">City:</label>
+                    <div class="form-group">
+                        <label for="inputCity" class="col-md-3 control-label label-grey">City:</label>
 
-                    <div class="col-md-10">
-                        <input type="text" class="form-control" id="inputCity" value="">
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="inputCity" value="">
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputZip" class="col-md-3 control-label">ZIP Code:</label>
+                    <div class="form-group">
+                        <label for="inputZip" class="col-md-3 control-label label-grey">ZIP Code:</label>
 
-                    <div class="col-md-4">
-                        <input type="text" class="form-control" id="inputZip" value="">
-                    </div>
-                    <label for="inputState" class="col-md-3 control-label">State:</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="inputZip" value="">
+                        </div>
+                        <label for="inputState" class="col-md-3 control-label label-grey">State:</label>
 
-                    <div class="btn-group col-md-3">
-                        <button type="button" id="inputState"
-                                class="dropdown-control dropdown-toggle"
-                                data-toggle="dropdown">
-                            Choose <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">AL</a></li>
-                            <li><a href="#">CA</a></li>
-                            <li><a href="#">MO</a></li>
-                            <li><a href="#">NH</a></li>
-                        </ul>
+                        <div class="btn-group col-md-3">
+                            <button type="button" id="inputState"
+                                    class="dropdown-control dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Choose <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">AL</a></li>
+                                <li><a href="#">CA</a></li>
+                                <li><a href="#">MO</a></li>
+                                <li><a href="#">NH</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputHours" class="col-md-3 control-label">Work Hours:</label>
+                    <div class="form-group">
+                        <label for="inputHours" class="col-md-3 control-label label-grey">Work Hours:</label>
 
-                    <div class="btn-group col-md-3">
-                        <button type="button" id="inputHours"
-                                class="dropdown-control dropdown-toggle"
-                                data-toggle="dropdown">
-                            Daily <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">AL</a></li>
-                            <li><a href="#">CA</a></li>
-                            <li><a href="#">MO</a></li>
-                            <li><a href="#">NH</a></li>
-                        </ul>
+                        <div class="btn-group col-md-3">
+                            <button type="button" id="inputHours"
+                                    class="dropdown-control dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Daily <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">AL</a></li>
+                                <li><a href="#">CA</a></li>
+                                <li><a href="#">MO</a></li>
+                                <li><a href="#">NH</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group col-md-3">
+                            <button type="button" id="inputHours"
+                                    class="dropdown-control dropdown-toggle"
+                                    data-toggle="dropdown">
+                                9:00pm <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">AL</a></li>
+                                <li><a href="#">CA</a></li>
+                                <li><a href="#">MO</a></li>
+                                <li><a href="#">NH</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group col-md-3">
+                            <button type="button" id="inputHours"
+                                    class="dropdown-control dropdown-toggle"
+                                    data-toggle="dropdown">
+                                9:00pm <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">AL</a></li>
+                                <li><a href="#">CA</a></li>
+                                <li><a href="#">MO</a></li>
+                                <li><a href="#">NH</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="btn btn-plus btn-rect pull-right" type="submit"><span
+                                    class="glyphicon-plus"></span></button>
+                        </div>
                     </div>
-                    <div class="btn-group col-md-3">
-                        <button type="button" id="inputHours"
-                                class="dropdown-control dropdown-toggle"
-                                data-toggle="dropdown">
-                            9:00pm <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">AL</a></li>
-                            <li><a href="#">CA</a></li>
-                            <li><a href="#">MO</a></li>
-                            <li><a href="#">NH</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group col-md-3">
-                        <button type="button" id="inputHours"
-                                class="dropdown-control dropdown-toggle"
-                                data-toggle="dropdown">
-                            9:00pm <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">AL</a></li>
-                            <li><a href="#">CA</a></li>
-                            <li><a href="#">MO</a></li>
-                            <li><a href="#">NH</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-1">
-                        <button class="btn btn-plus btn-rect pull-right" type="submit"><span
-                                class="glyphicon-plus"></span></button>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputLunch" class="col-md-3 control-label">Lunch Hours:</label>
+                    <div class="form-group">
+                        <label for="inputLunch" class="col-md-3 control-label label-grey">Lunch Hours:</label>
 
-                    <div class="btn-group col-md-3">
-                        <button type="button" id="inputLunch"
-                                class="dropdown-control dropdown-toggle"
-                                data-toggle="dropdown">
-                            9:00 am <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">AL</a></li>
-                            <li><a href="#">CA</a></li>
-                            <li><a href="#">MO</a></li>
-                            <li><a href="#">NH</a></li>
-                        </ul>
+                        <div class="btn-group col-md-3">
+                            <button type="button" id="inputLunch"
+                                    class="dropdown-control dropdown-toggle"
+                                    data-toggle="dropdown">
+                                9:00 am <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">AL</a></li>
+                                <li><a href="#">CA</a></li>
+                                <li><a href="#">MO</a></li>
+                                <li><a href="#">NH</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group col-md-3">
+                            <button type="button" id="inputHours"
+                                    class="dropdown-control dropdown-toggle"
+                                    data-toggle="dropdown">
+                                9:00pm <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">AL</a></li>
+                                <li><a href="#">CA</a></li>
+                                <li><a href="#">MO</a></li>
+                                <li><a href="#">NH</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="btn-group col-md-3">
-                        <button type="button" id="inputHours"
-                                class="dropdown-control dropdown-toggle"
-                                data-toggle="dropdown">
-                            9:00pm <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">AL</a></li>
-                            <li><a href="#">CA</a></li>
-                            <li><a href="#">MO</a></li>
-                            <li><a href="#">NH</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
