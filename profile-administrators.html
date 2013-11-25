@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Openmed - Manage Administrators</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/input.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/calendar.js"></script>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-fixed-top shadow-box header-background">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Logo.png" alt="logo"/>
+                    </a>
+                </div>
+                <div class="navbar-header col-md-5 pull-right">
+                    <div class="signed-in-user">
+                        <img class="signed-in-user-photo" src="img/AmandaShark.jpg">
+
+                        <div class="signed-in-username">Amanda Shark</div>
+                    </div>
+                </div>
+                <div class="triangle navbar-header  col-md-1">
+                    <div class="image-triangle"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="content-wide">
+    <div class="container header-offset footer-offset-wide">
+        <div class="row">
+            <div class="col-md-20 row-appointment pull-right">
+                <a class="close">×</a>
+
+                <div id="profilePanel" class="">
+                    <a class="close">×</a>
+
+                    <div class="row ">
+                        <!-- todo use correct column for image -->
+                        <div class="col-md-24">
+                            <ul class="nav nav-tabs">
+                                <li><a href="profile.html">My Profile</a></li>
+                                <li><a href="profile-settings.html">My Settings</a></li>
+                                <li class="active"><a href="profile-administrators.html">Manage Administrators</a></li>
+                                <li><a href="#">Manage Providers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="profile-slide">
+                        <div class="row">
+                            <div class="col-md-16">
+                                <div class="profile-body">
+                                    <div class="row profileTabs">
+                                        <!-- todo use correct column for image -->
+                                        <div class="col-md-3 col-md-offset-3">
+                                            <img class="user-photo-big" src="img/user1.jpg"/>
+                                        </div>
+                                        <!-- must be 22 here 1 is for close icon-->
+                                        <div class="col-md-14 col-md-offset-1">
+                                            <div class="row">
+                                                <div class="col-md-19">
+                                                    <h5><b>Amanda Shark</b></h5>
+                                                </div>
+                                                <div class="col-md-2 pull-right">
+                                                    <button class="btn btn-plus btn-rect pull-right">
+                                                        <span class="glyphicon glyphicon-edit"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row profile-name">
+                                                <div class="">
+                                                    <button type="button" id="profileType"
+                                                            class="dropdown-control dropdown-toggle"
+                                                            data-toggle="dropdown">
+                                                        Super Administrator <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">AL</a></li>
+                                                        <li><a href="#">CA</a></li>
+                                                        <li><a href="#">MO</a></li>
+                                                        <li><a href="#">NH</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row profile-inputs">
+                                        <div class="notificationForm col-md-24 col-md-offset-3">
+                                            <div class="row">
+                                                <form class="form-horizontal" id="Name" method='post' role="form">
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label label-grey">Email:</label>
+
+                                                        <div class="col-md-14">
+                                                            <input type="text" class="form-control" id="inputLastPhone"
+                                                                   value="amanda@gmail.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-md-4 control-label label-grey">New
+                                                            Password:</label>
+
+                                                        <div class="col-md-14">
+                                                            <input type="password" class="form-control" id="password"
+                                                                   value="trololo">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="shadow-box-top" role="navigation">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="footer-height btn-toolbar">
+                                                    <button id="btnBack" type="submit"
+                                                            class="btn btn-orange btn-operational col-md-offset-3 col-md-2">
+                                                        Save
+                                                    </button>
+                                                    <button id="btnFinish" type="submit"
+                                                            class="btn btn-grey btn-operational col-md-2">Cancel
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="appointment-content">
+                                <div class="col-md-7">
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+
+                                            <div class="col-md-6">
+                                                <img class="user-photo" src="img/user1.jpg"/>
+                                            </div>
+                                            <!-- must be 22 here 1 is for close icon-->
+                                            <div class="col-md-18">
+                                                <div class="row">
+                                                    <div class="col-md-19">
+                                                        <p class="appointment-description"><b>Amanda Shark</b></p>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <!-- remove margin and use auto layout -->
+                                                        <div class="dropdown dropdown-active appointment-details">
+                                                            <h6 id="H2" class="text-active" role="button"
+                                                                data-toggle="dropdown">Details <b
+                                                                    class="caret"></b></h6>
+                                                            <ul id="Ul2" class="dropdown-menu" role="menu"
+                                                                aria-labelledby="ddAppointmentsLabel">
+                                                                <li role="presentation"><a role="menuitem">Some
+                                                                    action</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+    <div class="footer shadow-box-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-7">
+                    <ul class="list-inline">
+                        <li><a href="#">Terms of Use</a></li>
+                        <li>|</li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <div class="text-center">
+                        <ul class="list-inline">
+                            <li>© 2013. Open Med. All rights reserved.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="pull-right">
+                        <ul class="list-inline">
+                            <li>Follow Us:</li>
+                            <img src="img/twitter.fw.png" alt="twitter"/>
+                            <img src="img/facebook.fw.png" alt="facebook"/>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
