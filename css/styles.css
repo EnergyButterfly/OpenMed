@@ -325,28 +325,41 @@ input[type=radio] + label {
     -moz-box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
     box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
 }
-.profile-body{
+
+.profile-body {
     height: 513px;
 }
 
-input .check{
+input .check {
     background: #888 !important;
     border: none !important;
     color: #000 !important;
 }
 
-.tabs-button-padding{
+.tabs-button-padding {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.footer-position{
+
+.footer-position {
     z-index: 1000;
     position: relative;
 }
 
-.hide-panel{
+.hide-panel {
     padding-top: 10px;
 }
-.hide-panel .close{
+
+.hide-panel .close {
     padding-left: 5px;
+}
+
+.appointment-content .glyphicon-star {
+    color: #F17D2D;
+}
+.appointment-content .glyphicon-star-empty {
+    color: #CBCBCB;
+}
+.appointment-content .glyphicon-comment {
+    color: #CBCBCB;
 }

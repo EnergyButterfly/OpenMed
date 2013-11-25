@@ -23,6 +23,8 @@
     background-image: -moz-linear-gradient(bottom, #da5c28, #ef823e);
     background-image: -o-linear-gradient(bottom, #da5c28, #ef823e);
     background-image: linear-gradient(to top, #da5c28, #ef823e);
+    text-shadow: 0 -1px #963;
+
 }
 
 .btn-orange-medium {
