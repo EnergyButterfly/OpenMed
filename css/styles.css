@@ -334,3 +334,19 @@ input .check{
     border: none !important;
     color: #000 !important;
 }
+
+.tabs-button-padding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-position{
+    z-index: 1000;
+    position: relative;
+}
+
+.hide-panel{
+    padding-top: 10px;
+}
+.hide-panel .close{
+    padding-left: 5px;
+}
