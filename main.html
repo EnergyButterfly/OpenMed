@@ -19,7 +19,7 @@
     <div class="navbar navbar-fixed-top shadow-box header-background">
         <div class="container">
             <div class="row">
-                <div class="navbar-collapse collapse col-md-5">
+                <div class="navbar-collapse collapse col-md-5 header-menu">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">
                             <h5><b>How it Works</b></h5>
@@ -27,15 +27,25 @@
                         <li><a href="#">
                             <h5><b>Get the App</b></h5>
                         </a></li>
-                        <li><a href="dashboard.html">
+                        <li><a href="#" id="btn-signin">
                             <h5><b>Sign In</b></h5>
-                        </a></li>
+                        </a>
+
+                        <div id="section-signin" class="signin">
+                            <input class="form-control input-header" type="text" placeholder="Email">
+                            <input class="form-control input-header" type="text" placeholder="Password">
+                            <a href="dashboard.html" class="btn-action btn-signin">Sign In</a>
+                        </div>
+
+                        </li>
                     </ul>
-                </div>
-                <div class="navbar-collapse collapse col-md-2 pull-right">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand pull-right" href="#">
                         <img src="img/appstore.png" alt="logo"/>
                     </a>
+                </div>
+                <div id="header-signin-error" class="alert-header-signin alert-danger alert-dismissable">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                  <strong>Invalid</strong> Email or Password, please re-check them and press "Sign In" again.
                 </div>
             </div>
         </div>
@@ -56,8 +66,12 @@
             <div class="input-group secret-code">
                 <input class="form-control" type="text" placeholder="Enter your secret code">
                 <span class="input-group-btn">
-                    <button class="btn-action btn-go" type="button">GO</button>
+                    <button id="btn-go" class="btn-action btn-go" type="button">GO</button>
                 </span>
+            </div>
+            <div id="secret-code-error" class="alert-secret-code alert-danger alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <strong>Invalid</strong> secret code, please re-check it and press "GO" again.
             </div>
         </div>
 
@@ -70,11 +84,16 @@
 
             <ul class="banner-menu">
                 <li>
-                    <a class="banner-btn" href="">
+                    <a class="banner-btn" data-toggle="dropdown" href="#">
                         <i class="glyphicon glyphicon-user icon-banner-left"></i>
                         <span class="banner-btn-text">Pick a type of provider</span>
                         <i class="glyphicon glyphicon-chevron-down icon-banner-right"></i>
                     </a>
+                    <ul class="dropdown-menu banner-dropdown pull-right" role="menu">
+                        <li><a href="#">Test Provider 1</a></li>
+                        <li><a href="#">Test Provider 2</a></li>
+                        <li><a href="#">Test Provider 3</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="banner-btn" href="">
@@ -83,11 +102,16 @@
                     </a>
                 </li>
                 <li>
-                    <a class="banner-btn" href="">
+                    <a class="banner-btn" data-toggle="dropdown" href="">
                         <i class="glyphicon glyphicon-usd icon-banner-left"></i>
                         <span class="banner-btn-text">Your insurance carrier</span>
                         <i class="glyphicon glyphicon-chevron-down icon-banner-right"></i>
                     </a>
+                    <ul class="dropdown-menu banner-dropdown pull-right" role="menu">
+                        <li><a href="#">Test Insurance Carrier 1</a></li>
+                        <li><a href="#">Test Insurance Carrier 2</a></li>
+                        <li><a href="#">Test Insurance Carrier 3</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="banner-btn" href="">
