@@ -502,8 +502,6 @@ input .check {
     }
 
 .alert-header-signin {
-    display: none;
-
     clear: both;
     margin-left: 290px;
     max-width: 322px;
@@ -513,8 +511,6 @@ input .check {
 }
 
 .alert-secret-code {
-    display: none;
-
     max-width: 266px;
     margin-top: 10px;
     margin-right: 10px;
