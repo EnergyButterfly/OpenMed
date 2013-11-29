@@ -93,6 +93,7 @@ a {
 
 .header-background {
     background: #fdfdfd;
+    z-index: 90;
 }
 
 .step-registration {
@@ -170,14 +171,27 @@ label, input, button, select, textarea {
 }
 
 .signed-in-user {
-    padding-top: 19px;
+    /*padding-top: 19px;*/
     /*error in guide lines*/
-    padding-bottom: 13px;
+    /*padding-bottom: 13px;*/
+
+    border: 1px solid transparent;
+    margin-top: 10px;
+    padding: 10px;
+    width: 210px;
 }
+    .signed-in-user-active {
+        border: 1px solid #dfd8e3;
+        border-radius: 3px;
+        background: #fff;
+        overflow: hidden;
+    }
 
 .signed-in-user-photo {
+    float: left;
     width: 40px;
     height: 40px;
+    border-radius: 3px;
 }
 
 /*.navbar-nav > li > a {
@@ -188,8 +202,22 @@ label, input, button, select, textarea {
     margin-left: 12px;
     display: inline;
     color: #f17d2d;
-    /*todo incorrect font size*/
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.signed-in-user-expanded {
+    position: relative;
+    overflow: hidden;
+    padding-left:  12px;;
+}
+
+.user-expanded-role {
+    display: inline-block;
+}
+
+.btn-active-user {
+    display: inline-block;
+    margin-top: 12px;
 }
 
 .user-photo {
@@ -321,9 +349,10 @@ input[type=radio] + label {
 }
 
 #profilePanel {
-    -webkit-box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
-    -moz-box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
-    box-shadow: -2px 2px 2px rgba(0, 0, 0, .05), inset 0 -1px #dfd8e3;
+    border-top: 1px solid #d6cfda;
+    -webkit-box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
 }
 
 .profile-body {
@@ -347,11 +376,26 @@ input .check {
 }
 
 .hide-panel {
-    padding-top: 10px;
+    margin-right: 22px;
 }
 
-.hide-panel .close {
-    padding-left: 5px;
+.hide-panel>a {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 22px;
+}
+
+.hide-panel .close-icon {
+    position: absolute;
+    top: -1px;
+    right: 0;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
 }
 
 .appointment-content .glyphicon-star {
@@ -552,4 +596,32 @@ input .check {
     box-shadow: none;
 
     -webkit-appearance: none;
+}
+
+/* PROFILE */
+.row-relative {
+    position: relative;
+}
+
+.row-profile {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    z-index: 100;
+    display: inline-block;
+    width: 75%;
+    overflow: hidden;
+
+    background: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+
+    background: rgba(0, 0, 0, .5);
 }
