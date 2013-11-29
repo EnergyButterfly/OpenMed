@@ -350,9 +350,6 @@ input[type=radio] + label {
 
 #profilePanel {
     border-top: 1px solid #d6cfda;
-    -webkit-box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
-    -moz-box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
-    box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
 }
 
 .profile-body {
@@ -613,6 +610,10 @@ input .check {
     overflow: hidden;
 
     background: #fff;
+
+    -webkit-box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc, 1px 1px 1px #ccc, -1px 1px 1px #ccc;
 }
 
 .overlay {
